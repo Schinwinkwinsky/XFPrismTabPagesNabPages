@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+            xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+            xmlns:views="clr-namespace:SuperBarato.Views"
+            x:Class="SuperBarato.Views.MainPage">
+
+    <TabbedPage.Children>
+        <NavigationPage Title="Promoções"
+                        IconImageSource="tag.png">
+            <x:Arguments>
+                <views:PromotionsPage/>
+            </x:Arguments>
+        </NavigationPage>
+
+        <NavigationPage Title="Nova"
+                        IconImageSource="signs.png">
+            <x:Arguments>
+                <views:NewPromotionPage/>
+            </x:Arguments>
+        </NavigationPage>
+
+        <NavigationPage Title="Conta"
+                        IconImageSource="user.png">
+            <x:Arguments>
+                <views:AccountPage/>
+            </x:Arguments>
+        </NavigationPage>
+    </TabbedPage.Children>
+</TabbedPage>
