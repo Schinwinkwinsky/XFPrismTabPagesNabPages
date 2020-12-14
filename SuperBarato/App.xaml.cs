@@ -16,13 +16,13 @@ namespace SuperBarato
         public App(IPlatformInitializer platformInitializer) 
             : base(platformInitializer) { }
 
-        protected override void OnInitialized()
+        protected override async void OnInitialized()
         {
             InitializeComponent();
 
-            NavigationService.NavigateAsync("MainPage");
+            await NavigationService.NavigateAsync("MainPage");
 
-            //NavigationService.NavigateAsync("MainPage?createTab=NavigationPage|PromotionsPage" +
+            //await NavigationService.NavigateAsync("MainPage?createTab=NavigationPage|PromotionsPage" +
             //    "&createTab=NavigationPage|NewPromotionPage" +
             //    "&createTab=NavigationPage|AccountPage");
         }
